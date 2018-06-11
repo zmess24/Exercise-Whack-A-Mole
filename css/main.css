@@ -1,0 +1,74 @@
+/* CSS THINGS WE WILL NEED */
+
+/* Positioning: https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/ */
+/* Flexbox: "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" */
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    width: 385px;
+    margin: 0 auto;
+}
+
+nav span {
+    float: right;
+    margin: 0px 5px;
+}
+
+footer {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.points {
+    float: right;
+}
+
+.timer {
+    float: right;
+}
+
+section {
+    background-color: green;
+    height: 385px;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: 2px solid black
+}
+
+.row {
+    height: 33%;
+    width: 100%;
+    /* Defines a flex container */
+    display: flex;
+    /* Defines the direction flex items are placed in the flex container */
+    flex-direction: row;
+}
+
+.hole {
+    /* Dictates what amount of the available space inside the flex container the item should take up. */
+    flex-grow: 1;
+    background-color: brown;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 15px;
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    max-width: 50px;
+    left: 25px;
+    top: 15px;
+    display: none;
+}
